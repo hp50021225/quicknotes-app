@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 24px 16px;
+}
+
+main {
+  max-width: 700px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+section {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+#note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#note-form input,
+#note-form select,
+#note-form button,
+#search-input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+#notes-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 12px;
+}
+
+.note-card {
+  background: #fafafa;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.category-personal { border-left-color: teal; }
+.category-work { border-left-color: darkred; }
+.category-study { border-left-color: blue; }
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+footer {
+  text-align: center;
+  padding: 16px;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  #note-form {
+    flex-direction: column;
+  }
+  main {
+    padding: 0 10px;
+  }
+}
